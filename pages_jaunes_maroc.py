@@ -163,10 +163,10 @@ class PJ(object):
 if __name__ == "__main__":    
     prof = open("medecins.txt", "w")    
     query = 'medecin'
-    google = PJ()
-    google.set_query(query)
+    pj = PJ()
+    pj.set_query(query)
     stat = True        
     while stat:
-        stat = google.search(prof)
-        google.set_page()
+        stat = pj.search(prof)
+        pj.set_page()
     prof.close()
